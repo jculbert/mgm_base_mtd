@@ -37,6 +37,7 @@
     <file name="sl_matter_config.h" generated="true" linked="false"/>
     <file name="sl_simple_button_config.h" generated="true" linked="false"/>
     <file name="sl_memory_config.h" generated="true" linked="false"/>
+    <file name="sl_simple_led_led0_config.h" generated="true" linked="false"/>
     <file name="sl_rail_util_rssi_config.h" generated="true" linked="false"/>
     <file name="sl_device_init_hfxo_config.h" generated="true" linked="false"/>
     <file name="sl_rail_util_pa_config.h" generated="true" linked="false"/>

@@ -45,6 +45,7 @@ component:
 - {from: matter, id: matter_switch}
 - {from: matter, id: matter_administrator_commissioning}
 - {from: matter, id: matter_time_format_localization}
+- {from: matter, id: matter_wstk_leds}
 - {from: matter, id: matter}
 - {from: matter, id: matter_ota_requestor}
 - {from: matter, id: matter_software_diagnostics}
@@ -53,9 +54,11 @@ component:
 - {from: matter, id: matter_identify}
 - {from: matter, id: matter_gatt}
 - {from: matter, id: matter_wifi_network_diagnostics}
+- instance: [led0]
+  id: simple_led
 - {id: device_init}
-- {from: matter, id: matter_general_diagnostics}
 - {id: rail_util_pti}
+- {from: matter, id: matter_general_diagnostics}
 - {from: matter, id: matter_thread_network_diagnostics}
 - {id: MGM240PB22VNA}
 - {from: matter, id: matter_configuration_over_swo}

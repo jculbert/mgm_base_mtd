@@ -39,6 +39,7 @@ sl_rail_util_rssi_config.h=-1502321847
 sl_simple_button_btn0_config.h=300217973
 sl_simple_button_btn1_config.h=1629087635
 sl_simple_button_config.h=1569967607
+sl_simple_led_led0_config.h=-473319290
 sl_sleeptimer_config.h=847044378
 sl_uartdrv_eusart_vcom_config.h=-1284519428
 uartdrv_config.h=-1381003705

@@ -489,6 +489,7 @@
           <file name="heap_4_silabs.c" uri="studio:/sdk/extension/matter_extension/examples/platform/efr32/heap_4_silabs.c"/>
           <file name="init_efrPlatform.cpp" uri="studio:/sdk/extension/matter_extension/examples/platform/efr32/init_efrPlatform.cpp"/>
           <file name="matter_config.cpp" uri="studio:/sdk/extension/matter_extension/examples/platform/efr32/matter_config.cpp"/>
+          <file name="LEDWidget.cpp" uri="studio:/sdk/extension/matter_extension/examples/platform/efr32/LEDWidget.cpp"/>
         </folder>
       </folder>
       <folder name="providers">
@@ -625,6 +626,16 @@
           <folder name="inc">
             <file name="sl_button.h" uri="studio:/sdk/platform/driver/button/inc/sl_button.h"/>
             <file name="sl_simple_button.h" uri="studio:/sdk/platform/driver/button/inc/sl_simple_button.h"/>
+          </folder>
+        </folder>
+        <folder name="leddrv">
+          <folder name="src">
+            <file name="sl_led.c" uri="studio:/sdk/platform/driver/leddrv/src/sl_led.c"/>
+            <file name="sl_simple_led.c" uri="studio:/sdk/platform/driver/leddrv/src/sl_simple_led.c"/>
+          </folder>
+          <folder name="inc">
+            <file name="sl_led.h" uri="studio:/sdk/platform/driver/leddrv/inc/sl_led.h"/>
+            <file name="sl_simple_led.h" uri="studio:/sdk/platform/driver/leddrv/inc/sl_simple_led.h"/>
           </folder>
         </folder>
       </folder>
@@ -2094,6 +2105,7 @@
   <includePath uri="studio:/sdk/util/third_party/freertos/kernel/portable/GCC/ARM_CM33_NTZ/non_secure"/>
   <includePath uri="studio:/sdk/platform/emdrv/gpiointerrupt/inc"/>
   <includePath uri="studio:/sdk/platform/service/hfxo_manager/inc"/>
+  <includePath uri="studio:/sdk/platform/driver/leddrv/inc"/>
   <includePath uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/config"/>
   <includePath uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/inc"/>
   <includePath uri="studio:/sdk/util/third_party/mbedtls/include"/>
@@ -2143,6 +2155,7 @@
   <macroDefinition name="CURRENT_TIME_NOT_IMPLEMENTED" value="1"/>
   <macroDefinition name="SL_BT_DISABLE_EVENT_TASK"/>
   <macroDefinition name="RTT_USE_ASM" value="0"/>
+  <macroDefinition name="ENABLE_WSTK_LEDS" value="1"/>
   <macroDefinition name="MGM240PB22VNA"/>
   <macroDefinition name="SL_APP_PROPERTIES"/>
   <macroDefinition name="SL_BOARD_NAME" value="&quot;BRD4316A&quot;"/>

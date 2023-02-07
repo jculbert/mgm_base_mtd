@@ -1200,6 +1200,11 @@
 			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/examples/platform/efr32/EFR32DeviceDataProvider.cpp</locationURI>
 		</link>
 		<link>
+			<name>matter_1.0.3/examples/platform/efr32/LEDWidget.cpp</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/examples/platform/efr32/LEDWidget.cpp</locationURI>
+		</link>
+		<link>
 			<name>matter_1.0.3/examples/platform/efr32/efr32_utils.cpp</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/examples/platform/efr32/efr32_utils.cpp</locationURI>
@@ -2068,6 +2073,26 @@
 			<name>gecko_sdk_4.2.1/platform/driver/button/src/sl_simple_button.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/driver/button/src/sl_simple_button.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.2.1/platform/driver/leddrv/inc/sl_led.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/driver/leddrv/inc/sl_led.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.2.1/platform/driver/leddrv/inc/sl_simple_led.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/driver/leddrv/inc/sl_simple_led.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.2.1/platform/driver/leddrv/src/sl_led.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/driver/leddrv/src/sl_led.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_4.2.1/platform/driver/leddrv/src/sl_simple_led.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/driver/leddrv/src/sl_simple_led.c</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_4.2.1/platform/emdrv/common/inc/ecode.h</name>
