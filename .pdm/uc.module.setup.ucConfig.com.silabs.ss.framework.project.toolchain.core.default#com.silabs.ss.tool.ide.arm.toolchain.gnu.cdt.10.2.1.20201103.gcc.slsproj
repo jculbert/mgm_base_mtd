@@ -7,10 +7,10 @@
     <folder name="zap">
       <file name="light-switch-app.zap" generated="true" linked="false"/>
     </folder>
+    <file name="sl_mx25_flash_shutdown_eusart_config.h" generated="true" linked="false"/>
     <file name="sl_simple_button_btn0_config.h" generated="true" linked="false"/>
     <file name="sl_simple_button_btn1_config.h" generated="true" linked="false"/>
     <file name="psa_crypto_config.h" generated="true" linked="false"/>
-    <file name="sl_mx25_flash_shutdown_eusart_config.h" generated="true" linked="false"/>
     <file name="sl_device_init_lfrco_config.h" generated="true" linked="false"/>
     <file name="sl_device_init_dcdc_config.h" generated="true" linked="false"/>
     <file name="sl_bt_rtos_config.h" generated="true" linked="false"/>

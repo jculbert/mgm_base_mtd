@@ -62,6 +62,45 @@
 #define APP_FUNCTION_BUTTON &sl_button_btn0
 #define APP_LIGHT_SWITCH &sl_button_btn1
 
+// At this time Feb 8, 2023 the power manager system is not working correctly.
+// In some cases the MCU seems to be left in EM1 instead of EM2 after waking
+// up for an Rx data poll. To correct for this we run a dummy timer
+// which wakes up the MCU periodically. This wakes up the EM1 state above
+// and resumes in EM2. This change reduces steady state current from about
+// 70 ua to 25 ua.
+TimerHandle_t dummyTimer;
+void DummyTimerEventHandler(TimerHandle_t xTimer)
+{
+}
+
+#if 0
+#include "sl_power_manager.h"
+void pm_callback(sl_power_manager_em_t from, sl_power_manager_em_t to)
+{
+    ChipLogProgress(Zcl, "from %d to %d", from, to);
+}
+
+#define EM_EVENT_MASK_ALL  (SL_POWER_MANAGER_EVENT_TRANSITION_ENTERING_EM0   \
+                              | SL_POWER_MANAGER_EVENT_TRANSITION_LEAVING_EM0  \
+                              | SL_POWER_MANAGER_EVENT_TRANSITION_ENTERING_EM1 \
+                              | SL_POWER_MANAGER_EVENT_TRANSITION_LEAVING_EM1  \
+                              | SL_POWER_MANAGER_EVENT_TRANSITION_ENTERING_EM2 \
+                              | SL_POWER_MANAGER_EVENT_TRANSITION_LEAVING_EM2  \
+                              | SL_POWER_MANAGER_EVENT_TRANSITION_ENTERING_EM3 \
+                              | SL_POWER_MANAGER_EVENT_TRANSITION_LEAVING_EM3)
+
+ sl_power_manager_em_transition_event_handle_t event_handle;
+ sl_power_manager_em_transition_event_info_t event_info = {
+    .event_mask = EM_EVENT_MASK_ALL,
+    .on_event = pm_callback,
+ };
+
+ void pm_register_callback()
+ {
+     sl_power_manager_subscribe_em_transition_event(&event_handle, &event_info);
+ }
+#endif
+
 using namespace chip;
 using namespace ::chip::DeviceLayer;
 
@@ -169,6 +208,9 @@ CHIP_ERROR AppTask::Init()
         appError(err);
     }
 
+    dummyTimer = xTimerCreate("DummyTmr", 1500, true, (void *) this, DummyTimerEventHandler);
+    xTimerStart(dummyTimer, 100);
+
     return err;
 }
 
@@ -194,6 +236,9 @@ void AppTask::AppTaskMain(void * pvParameter)
 #endif
 
     EFR32_LOG("App Task started");
+#if 0
+    pm_register_callback();
+#endif
     while (true)
     {
         BaseType_t eventReceived = xQueueReceive(sAppEventQueue, &event, portMAX_DELAY);
