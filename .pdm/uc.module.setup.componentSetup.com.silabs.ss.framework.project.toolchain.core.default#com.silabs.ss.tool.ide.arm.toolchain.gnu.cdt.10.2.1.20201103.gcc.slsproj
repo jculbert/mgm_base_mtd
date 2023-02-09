@@ -852,6 +852,11 @@
           <file name="em_vdac.h" uri="studio:/sdk/platform/emlib/inc/em_vdac.h"/>
           <file name="em_wdog.h" uri="studio:/sdk/platform/emlib/inc/em_wdog.h"/>
         </folder>
+        <folder name="init">
+          <folder name="gpio_simple">
+            <file name="sl_emlib_gpio_simple_init.h" uri="studio:/sdk/platform/emlib/init/gpio_simple/sl_emlib_gpio_simple_init.h"/>
+          </folder>
+        </folder>
       </folder>
       <folder name="radio">
         <folder name="rail_lib">
@@ -2099,6 +2104,7 @@
   <includePath uri="studio:/sdk/platform/emdrv/dmadrv/inc"/>
   <includePath uri="studio:/sdk/platform/emdrv/common/inc"/>
   <includePath uri="studio:/sdk/platform/emlib/inc"/>
+  <includePath uri="studio:/sdk/platform/emlib/init/gpio_simple"/>
   <includePath uri="studio:/sdk/platform/radio/rail_lib/plugin/fem_util"/>
   <includePath uri="studio:/sdk/util/third_party/freertos/cmsis/Include"/>
   <includePath uri="studio:/sdk/util/third_party/freertos/kernel/include"/>

@@ -20,6 +20,7 @@
 #include "sl_bt_rtos_adaptation.h"
 #include "platform-efr32.h"
 #include "sl_sleeptimer.h"
+#include "sl_emlib_gpio_simple_init.h"
 #include "gpiointerrupt.h"
 #include "sl_mbedtls.h"
 #include "sl_mpu.h"
@@ -60,6 +61,7 @@ void sl_kernel_start(void)
 
 void sl_driver_init(void)
 {
+  sl_emlib_gpio_simple_init();
   GPIOINT_Init();
   sl_simple_button_init_instances();
   sl_simple_led_init_instances();

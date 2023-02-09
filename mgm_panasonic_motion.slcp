@@ -28,7 +28,7 @@ component:
 - {from: matter, id: matter_group_key_mgmt}
 - {from: matter, id: matter_segger_rtt}
 - {from: matter, id: matter_descriptor}
-- instance: [btn0, btn1]
+- instance: [btn0]
   id: simple_button
 - {from: matter, id: matter_ethernet_network_diagnostics}
 - {id: brd4316a}
@@ -40,6 +40,8 @@ component:
 - {from: matter, id: matter_bindings}
 - {from: matter, id: matter_basic}
 - {from: matter, id: matter_thread_mtd}
+- instance: [motion_input]
+  id: emlib_gpio_simple_init
 - {from: matter, id: matter_network_commissioning}
 - {from: matter, id: matter_operational_credentials}
 - {from: matter, id: matter_switch}
@@ -57,8 +59,8 @@ component:
 - instance: [led0]
   id: simple_led
 - {id: device_init}
-- {id: rail_util_pti}
 - {from: matter, id: matter_general_diagnostics}
+- {id: rail_util_pti}
 - {from: matter, id: matter_thread_network_diagnostics}
 - {id: MGM240PB22VNA}
 - {from: matter, id: matter_configuration_over_swo}

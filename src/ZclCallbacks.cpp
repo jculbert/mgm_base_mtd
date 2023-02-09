@@ -20,6 +20,7 @@
  *   This file implements the handler for data model messages.
  */
 
+#if 0
 #include "AppConfig.h"
 
 #include <app-common/zap-generated/ids/Attributes.h>
@@ -69,3 +70,5 @@ void emberAfOnOffClusterInitCallback(EndpointId endpoint)
 {
     
 }
+
+#endif

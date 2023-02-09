@@ -30,6 +30,7 @@ struct AppEvent
         kEventType_Timer,
         kEventType_Light,
         kEventType_Install,
+        kEventType_ClusterWorker,
     };
 
     uint16_t Type;
@@ -49,6 +50,10 @@ struct AppEvent
             uint8_t Action;
             int32_t Actor;
         } LightEvent;
+        struct
+        {
+            void * Context;
+        } ClusterWorkerEvent;
     };
 
     EventHandler Handler;

@@ -21,6 +21,7 @@ sl_device_init_emu_config.h=1238190016
 sl_device_init_hfxo_config.h=1862180749
 sl_device_init_lfrco_config.h=545802331
 sl_device_init_lfxo_config.h=1192628029
+sl_emlib_gpio_init_motion_input_config.h=-1245518564
 sl_fem_util_config.h=1111679697
 sl_hfxo_manager_config.h=1391893206
 sl_matter_config.h=2102519916

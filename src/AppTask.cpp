@@ -60,7 +60,6 @@
 #define SYSTEM_STATE_LED &sl_led_led0
 
 #define APP_FUNCTION_BUTTON &sl_button_btn0
-#define APP_LIGHT_SWITCH &sl_button_btn1
 
 // At this time Feb 8, 2023 the power manager system is not working correctly.
 // In some cases the MCU seems to be left in EM1 instead of EM2 after waking
@@ -268,32 +267,6 @@ void AppTask::OnIdentifyStop(Identify * identify)
 #endif
 }
 
-void AppTask::SwitchActionEventHandler(AppEvent * aEvent)
-{
-    if (aEvent->Type == AppEvent::kEventType_Button)
-    {
-        BindingCommandData * data = Platform::New<BindingCommandData>();
-        data->clusterId           = chip::app::Clusters::OnOff::Id;
-
-        if (mCurrentButtonState)
-        {
-            mCurrentButtonState = false;
-            data->commandId     = chip::app::Clusters::OnOff::Commands::Off::Id;
-        }
-        else
-        {
-            data->commandId     = chip::app::Clusters::OnOff::Commands::On::Id;
-            mCurrentButtonState = true;
-        }
-
-#ifdef DISPLAY_ENABLED
-        sAppTask.GetLCD().WriteDemoUI(mCurrentButtonState);
-#endif
-
-        DeviceLayer::PlatformMgr().ScheduleWork(SwitchWorkerFunction, reinterpret_cast<intptr_t>(data));
-    }
-}
-
 void AppTask::ButtonEventHandler(const sl_button_t * buttonHandle, uint8_t btnAction)
 {
     if (buttonHandle == NULL)
@@ -305,12 +278,7 @@ void AppTask::ButtonEventHandler(const sl_button_t * buttonHandle, uint8_t btnAc
     button_event.Type               = AppEvent::kEventType_Button;
     button_event.ButtonEvent.Action = btnAction;
 
-    if (buttonHandle == APP_LIGHT_SWITCH && btnAction == SL_SIMPLE_BUTTON_PRESSED)
-    {
-        button_event.Handler = SwitchActionEventHandler;
-        sAppTask.PostEvent(&button_event);
-    }
-    else if (buttonHandle == APP_FUNCTION_BUTTON)
+    if (buttonHandle == APP_FUNCTION_BUTTON)
     {
         button_event.Handler = BaseApplication::ButtonHandler;
         sAppTask.PostEvent(&button_event);
