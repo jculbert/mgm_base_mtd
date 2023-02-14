@@ -3195,109 +3195,34 @@
 			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/network-commissioning/network-commissioning.h</locationURI>
 		</link>
 		<link>
+			<name>matter_1.0.3/src/app/clusters/occupancy-sensor-server/occupancy-hal.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/occupancy-sensor-server/occupancy-hal.h</locationURI>
+		</link>
+		<link>
+			<name>matter_1.0.3/src/app/clusters/occupancy-sensor-server/occupancy-sensor-server.cpp</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/occupancy-sensor-server/occupancy-sensor-server.cpp</locationURI>
+		</link>
+		<link>
+			<name>matter_1.0.3/src/app/clusters/occupancy-sensor-server/occupancy-sensor-server.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/occupancy-sensor-server/occupancy-sensor-server.h</locationURI>
+		</link>
+		<link>
 			<name>matter_1.0.3/src/app/clusters/operational-credentials-server/operational-credentials-server.cpp</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/operational-credentials-server/operational-credentials-server.cpp</locationURI>
 		</link>
 		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/BDXDownloader.cpp</name>
+			<name>matter_1.0.3/src/app/clusters/scenes-client/scenes-client.cpp</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/BDXDownloader.cpp</locationURI>
+			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/scenes-client/scenes-client.cpp</locationURI>
 		</link>
 		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/BDXDownloader.h</name>
+			<name>matter_1.0.3/src/app/clusters/scenes-client/scenes-client.h</name>
 			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/BDXDownloader.h</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/DefaultOTARequestor.cpp</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestor.cpp</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/DefaultOTARequestor.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestor.h</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/DefaultOTARequestorDriver.cpp</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestorDriver.cpp</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/DefaultOTARequestorDriver.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestorDriver.h</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/DefaultOTARequestorStorage.cpp</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestorStorage.cpp</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/DefaultOTARequestorStorage.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestorStorage.h</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/DefaultOTARequestorUserConsent.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestorUserConsent.h</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/ExtendedOTARequestorDriver.cpp</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/ExtendedOTARequestorDriver.cpp</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/ExtendedOTARequestorDriver.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/ExtendedOTARequestorDriver.h</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/OTADownloader.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/OTADownloader.h</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/OTARequestorDriver.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/OTARequestorDriver.h</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/OTARequestorInterface.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/OTARequestorInterface.h</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/OTARequestorStorage.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/OTARequestorStorage.h</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/OTARequestorUserConsentDelegate.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/OTARequestorUserConsentDelegate.h</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/OTATestEventTriggerDelegate.cpp</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/OTATestEventTriggerDelegate.cpp</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/OTATestEventTriggerDelegate.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/OTATestEventTriggerDelegate.h</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/ota-requestor-server.cpp</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/ota-requestor-server.cpp</locationURI>
-		</link>
-		<link>
-			<name>matter_1.0.3/src/app/clusters/ota-requestor/ota-requestor-server.h</name>
-			<type>1</type>
-			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/ota-requestor/ota-requestor-server.h</locationURI>
+			<locationURI>STUDIO_SDK_LOC/extension/matter_extension/src/app/clusters/scenes-client/scenes-client.h</locationURI>
 		</link>
 		<link>
 			<name>matter_1.0.3/src/app/clusters/software-diagnostics-server/software-diagnostics-server.cpp</name>

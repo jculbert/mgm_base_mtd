@@ -122,6 +122,14 @@
 // [I2C0]$
 
 // $[EUSART0]
+// EUSART0 RX on PA05
+#define EUSART0_RX_PORT                          gpioPortA
+#define EUSART0_RX_PIN                           5
+
+// EUSART0 TX on PA06
+#define EUSART0_TX_PORT                          gpioPortA
+#define EUSART0_TX_PIN                           6
+
 // [EUSART0]$
 
 // $[PTI]

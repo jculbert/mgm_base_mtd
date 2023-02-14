@@ -53,6 +53,8 @@
 
 #include <app/clusters/identify-server/identify-server.h>
 
+#include "ClusterPanasonicOccupancy.h"
+
 /**********************************************************
  * Defines and Constants
  *********************************************************/
@@ -102,6 +104,7 @@ void pm_callback(sl_power_manager_em_t from, sl_power_manager_em_t to)
 
 using namespace chip;
 using namespace ::chip::DeviceLayer;
+using namespace cluster_lib;
 
 namespace {
 
@@ -234,6 +237,7 @@ void AppTask::AppTaskMain(void * pvParameter)
     sAppTask.StartStatusLEDTimer();
 #endif
 
+    ClusterPanasonicOccupancy *occupancy = new ClusterPanasonicOccupancy(1, 20, BaseApplication::PostEvent);
     EFR32_LOG("App Task started");
 #if 0
     pm_register_callback();

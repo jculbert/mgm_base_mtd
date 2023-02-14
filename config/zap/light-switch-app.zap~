@@ -1579,7 +1579,7 @@
           "mfgCode": null,
           "define": "OTA_PROVIDER_CLUSTER",
           "side": "client",
-          "enabled": 0,
+          "enabled": 1,
           "commands": [
             {
               "name": "QueryImage",
@@ -1743,7 +1743,7 @@
           "mfgCode": null,
           "define": "OTA_REQUESTOR_CLUSTER",
           "side": "server",
-          "enabled": 0,
+          "enabled": 1,
           "attributes": [
             {
               "name": "DefaultOtaProviders",

@@ -210,30 +210,17 @@
             <file name="network-commissioning.cpp" uri="studio:/sdk/extension/matter_extension/src/app/clusters/network-commissioning/network-commissioning.cpp"/>
             <file name="network-commissioning.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/network-commissioning/network-commissioning.h"/>
           </folder>
+          <folder name="occupancy-sensor-server">
+            <file name="occupancy-sensor-server.cpp" uri="studio:/sdk/extension/matter_extension/src/app/clusters/occupancy-sensor-server/occupancy-sensor-server.cpp"/>
+            <file name="occupancy-sensor-server.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/occupancy-sensor-server/occupancy-sensor-server.h"/>
+            <file name="occupancy-hal.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/occupancy-sensor-server/occupancy-hal.h"/>
+          </folder>
           <folder name="operational-credentials-server">
             <file name="operational-credentials-server.cpp" uri="studio:/sdk/extension/matter_extension/src/app/clusters/operational-credentials-server/operational-credentials-server.cpp"/>
           </folder>
-          <folder name="ota-requestor">
-            <file name="ota-requestor-server.cpp" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/ota-requestor-server.cpp"/>
-            <file name="BDXDownloader.cpp" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/BDXDownloader.cpp"/>
-            <file name="DefaultOTARequestor.cpp" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestor.cpp"/>
-            <file name="DefaultOTARequestorDriver.cpp" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestorDriver.cpp"/>
-            <file name="DefaultOTARequestorStorage.cpp" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestorStorage.cpp"/>
-            <file name="ExtendedOTARequestorDriver.cpp" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/ExtendedOTARequestorDriver.cpp"/>
-            <file name="OTATestEventTriggerDelegate.cpp" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/OTATestEventTriggerDelegate.cpp"/>
-            <file name="ota-requestor-server.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/ota-requestor-server.h"/>
-            <file name="BDXDownloader.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/BDXDownloader.h"/>
-            <file name="DefaultOTARequestor.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestor.h"/>
-            <file name="DefaultOTARequestorDriver.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestorDriver.h"/>
-            <file name="DefaultOTARequestorStorage.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestorStorage.h"/>
-            <file name="DefaultOTARequestorUserConsent.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/DefaultOTARequestorUserConsent.h"/>
-            <file name="ExtendedOTARequestorDriver.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/ExtendedOTARequestorDriver.h"/>
-            <file name="OTADownloader.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/OTADownloader.h"/>
-            <file name="OTARequestorDriver.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/OTARequestorDriver.h"/>
-            <file name="OTARequestorInterface.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/OTARequestorInterface.h"/>
-            <file name="OTARequestorStorage.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/OTARequestorStorage.h"/>
-            <file name="OTARequestorUserConsentDelegate.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/OTARequestorUserConsentDelegate.h"/>
-            <file name="OTATestEventTriggerDelegate.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor/OTATestEventTriggerDelegate.h"/>
+          <folder name="scenes-client">
+            <file name="scenes-client.cpp" uri="studio:/sdk/extension/matter_extension/src/app/clusters/scenes-client/scenes-client.cpp"/>
+            <file name="scenes-client.h" uri="studio:/sdk/extension/matter_extension/src/app/clusters/scenes-client/scenes-client.h"/>
           </folder>
           <folder name="software-diagnostics-server">
             <file name="software-diagnostics-server.cpp" uri="studio:/sdk/extension/matter_extension/src/app/clusters/software-diagnostics-server/software-diagnostics-server.cpp"/>
@@ -2087,7 +2074,8 @@
   <includePath uri="studio:/sdk/extension/matter_extension/src/app/clusters/groups-server"/>
   <includePath uri="studio:/sdk/extension/matter_extension/src/app/clusters/identify-server"/>
   <includePath uri="studio:/sdk/extension/matter_extension/src/app/clusters/network-commissioning"/>
-  <includePath uri="studio:/sdk/extension/matter_extension/src/app/clusters/ota-requestor"/>
+  <includePath uri="studio:/sdk/extension/matter_extension/src/app/clusters/occupancy-sensor-server"/>
+  <includePath uri="studio:/sdk/extension/matter_extension/src/app/clusters/scenes-client"/>
   <includePath uri="studio:/sdk/extension/matter_extension/third_party/silabs/gecko_sdk/util/third_party/segger/systemview/SEGGER"/>
   <includePath uri="studio:/sdk/extension/matter_extension/src/app/clusters/software-diagnostics-server"/>
   <includePath uri="studio:/sdk/extension/matter_extension/src/app/clusters/switch-server"/>
