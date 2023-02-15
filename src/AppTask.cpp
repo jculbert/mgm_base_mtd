@@ -237,7 +237,7 @@ void AppTask::AppTaskMain(void * pvParameter)
     sAppTask.StartStatusLEDTimer();
 #endif
 
-    ClusterPanasonicOccupancy *occupancy = new ClusterPanasonicOccupancy(1, 20, BaseApplication::PostEvent);
+    ClusterPanasonicOccupancy *occupancy = new ClusterPanasonicOccupancy(1, 90, BaseApplication::PostEvent);
     EFR32_LOG("App Task started");
 #if 0
     pm_register_callback();
