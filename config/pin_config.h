@@ -133,13 +133,13 @@
 // [EUSART0]$
 
 // $[PTI]
-// PTI DFRAME on PC05
+// PTI DFRAME on PC03
 #define PTI_DFRAME_PORT                          gpioPortC
-#define PTI_DFRAME_PIN                           5
+#define PTI_DFRAME_PIN                           3
 
-// PTI DOUT on PC04
+// PTI DOUT on PC02
 #define PTI_DOUT_PORT                            gpioPortC
-#define PTI_DOUT_PIN                             4
+#define PTI_DOUT_PIN                             2
 
 // [PTI]$
 

@@ -41,7 +41,7 @@ component:
 - {from: matter, id: matter_scenes_client}
 - {from: matter, id: matter_basic}
 - {from: matter, id: matter_thread_mtd}
-- instance: [motion_input]
+- instance: [PANASONIC_VDD, PANASONIC_VDD_SET_TO_INPUT, motion_input]
   id: emlib_gpio_simple_init
 - {from: matter, id: matter_network_commissioning}
 - {from: matter, id: matter_operational_credentials}
@@ -60,8 +60,9 @@ component:
 - instance: [led0]
   id: simple_led
 - {id: device_init}
-- {from: matter, id: matter_general_diagnostics}
 - {id: rail_util_pti}
+- {from: matter, id: matter_general_diagnostics}
+- {from: matter, id: matter_sed}
 - {from: matter, id: matter_thread_network_diagnostics}
 - {id: MGM240PB22VNA}
 - {from: matter, id: matter_configuration_over_swo}

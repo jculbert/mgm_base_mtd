@@ -210,7 +210,7 @@ CHIP_ERROR AppTask::Init()
         appError(err);
     }
 
-    dummyTimer = xTimerCreate("DummyTmr", 1500, true, (void *) this, DummyTimerEventHandler);
+    dummyTimer = xTimerCreate("DummyTmr", 3200, true, (void *) this, DummyTimerEventHandler);
     xTimerStart(dummyTimer, 100);
 
     return err;

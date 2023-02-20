@@ -33,6 +33,8 @@
     <file name="sl_bluetooth_config.h" generated="true" linked="false"/>
     <file name="sl_device_init_dpll_config.h" generated="true" linked="false"/>
     <file name="sl_board_control_config.h" generated="true" linked="false"/>
+    <file name="sl_emlib_gpio_init_PANASONIC_VDD_config.h" generated="true" linked="false"/>
+    <file name="sl_emlib_gpio_init_PANASONIC_VDD_SET_TO_INPUT_config.h" generated="true" linked="false"/>
     <file name="sl_emlib_gpio_init_motion_input_config.h" generated="true" linked="false"/>
     <file name="sl_matter_config.h" generated="true" linked="false"/>
     <file name="sl_simple_button_config.h" generated="true" linked="false"/>
